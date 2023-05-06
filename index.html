@@ -6,21 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
 
-        <style>@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");</style>
+        <style>@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");</style>
 
         <title>COMPANY HOME</title>
     </head>
 
     <body>
         <h1>COMPANY</h1>
-        <!-- <div class="navbar"> -->
-            <div class="dropdown">
-                <button onclick="showDropdown()" class="dropbtn"><b>SEARCH</b></button>
-                <div id="dropdownMenu" class="dropdown-content">
-                    <a href="searchbyclinic.html">Search For Clinic</a>
-                    <a href="searchbydoctor.html">Search For Service Provider</a>
+        <div class="navbar-container">
+            <div class="navbar">
+                <a href="index.html" class="nav-active"><b>HOME</b></a>
+                <a href="about.html"><b>ABOUT</b></a>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>SEARCH</b></button>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="searchbyclinic.html">Search For Clinic</a>
+                        <a href="searchbydoctor.html">Search For Service Provider</a>
+                    </div>
+                    <!-- TODO: BUTTONS [Home, Write a Review, Register Your Clinic]-->
                 </div>
-                <!-- TODO: BUTTONS [Home, Write a Review, Register Your Clinic]-->
+                <a href="review.html"><b>WRITE A REVIEW</b></a>
+                <a href="register.html"><b>REGISTER YOUR CLINIC</b></a>
+            </div>
         </div>
     </body>
 </html>
