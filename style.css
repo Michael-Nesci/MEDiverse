@@ -1,0 +1,48 @@
+/* Dropdown Button */
+.dropbtn{
+    background-color: dimgrey;
+    color: white;
+    padding: 16px 48px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Button Behaviour (Hover + Focus) */
+.dropbtn:hover .dropbtn{
+    background-color: darkgrey;
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/* Items in Dropdown Menu */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(131, 131, 131);
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+/* Links in Dropdown Menu */
+.dropdown-content a{
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown Menu Behaviour (Hover) */
+.dropdown-content a:hover {
+    background-color: darkgrey;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
