@@ -1,60 +1,87 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Reviews</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        h2 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
 
-        <style>@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");</style>
-        <style>@import url('https://fonts.cdnfonts.com/css/fredoka-one');</style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-        <title>MEDiverse</title>
-    </head>
+        label {
+            display: block;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 8px;
+        }
 
-    <body>
-        <h1 style="font-family: Fredoka One; color: #520047">MEDiverse</h1>
-        <div class="navbar-container">
-            <div class="navbar">
-                <a href="index.html" class="nav-active"><b>HOME</b></a>
-                <a href="about.html"><b>ABOUT</b></a>
-                <div class="dropdown">
-                    <button class="dropbtn"><b>SEARCH</b></button>
-                    <div id="dropdownMenu" class="dropdown-content">
-                        <a href="searchbyname.html">Search By Name</a>
-                        <a href="searchbytags.html">Search By Tags</a>
-                    </div>
-                </div>
-                <a href="review.html"><b>WRITE A REVIEW</b></a>
-                <a href="register.html"><b>REGISTER YOUR CLINIC</b></a>
-            </div>
-        </div>
-        <div class="header_section">
-            <div class="container-fluid">
-                  <div class="main">
-                     <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-                  </div>
-               </div>
-            <div class="banner_section layout_padding">
-                <div class="container">
-                            
-                <h1 class="banner_title"><b>MEDiverse</b></h1>
-                <h4 class="banner_text">Providing you with great "out"-patient care, one doctor at a time!</h4>
-                            
-                <div class="more_bt"><a href="about.html">Learn more!</a></div>
-                    
-                </div>            
-            </div>
-        </div>
-        <div class="home-layout">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <h1 class="home-title">Have a problem and don't know where to go?</h1>
-                     <p class="home-text">Search for doctors and check reviews! Never have an awkward experience at the office again.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-    </body>
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/submit" method="post">
+    <label for="science">Review:</label>
+    <input type="text" id="science" name="science" value="">
+
+    <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be evaluated and a score will be given.</p>
+
+</body>
 </html>
