@@ -1,4 +1,4 @@
-# Methacks-2023
+# MEDiverse - Methacks-2023
 
 MEDiverse is a website that allows patients to look up LGBTQ+-friendly healthcare providers (and specifics, such as whether they are transgender-friendly, etc) at the click of a button.
 
