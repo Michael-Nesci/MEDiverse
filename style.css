@@ -226,6 +226,41 @@ body{
     letter-spacing: 1.5px;
 }
 
+/* Style the navigation menu */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block
+  }
+  
+  #myMenu li a:hover, #myMenu li:hover {
+    background-color: #eee;
+  }
+
+li{
+    display: table-cell;
+    border: 5px solid rgb(255, 230, 243);
+    padding: 17px;
+    text-align: center;
+    vertical-align: center;
+    position:relative;
+    background-color: rgb(82, 0, 71);
+    width: 100px;
+}
+
+#myMenu a{
+    display: block;
+    width: 80px;}
+
 .info{
     padding-top: 60px;
     color: #969695;
